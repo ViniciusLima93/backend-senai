@@ -1,0 +1,15 @@
+C:\Users\Vinícius\Documents\backend-vet\bin\Debug\net7.0\backend-vet.exe
+C:\Users\Vinícius\Documents\backend-vet\bin\Debug\net7.0\backend-vet.deps.json
+C:\Users\Vinícius\Documents\backend-vet\bin\Debug\net7.0\backend-vet.runtimeconfig.json
+C:\Users\Vinícius\Documents\backend-vet\bin\Debug\net7.0\backend-vet.dll
+C:\Users\Vinícius\Documents\backend-vet\bin\Debug\net7.0\backend-vet.pdb
+C:\Users\Vinícius\Documents\backend-vet\obj\Debug\net7.0\backend-vet.csproj.AssemblyReference.cache
+C:\Users\Vinícius\Documents\backend-vet\obj\Debug\net7.0\backend-vet.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vinícius\Documents\backend-vet\obj\Debug\net7.0\backend-vet.AssemblyInfoInputs.cache
+C:\Users\Vinícius\Documents\backend-vet\obj\Debug\net7.0\backend-vet.AssemblyInfo.cs
+C:\Users\Vinícius\Documents\backend-vet\obj\Debug\net7.0\backend-vet.csproj.CoreCompileInputs.cache
+C:\Users\Vinícius\Documents\backend-vet\obj\Debug\net7.0\backend-vet.dll
+C:\Users\Vinícius\Documents\backend-vet\obj\Debug\net7.0\refint\backend-vet.dll
+C:\Users\Vinícius\Documents\backend-vet\obj\Debug\net7.0\backend-vet.pdb
+C:\Users\Vinícius\Documents\backend-vet\obj\Debug\net7.0\backend-vet.genruntimeconfig.cache
+C:\Users\Vinícius\Documents\backend-vet\obj\Debug\net7.0\ref\backend-vet.dll
