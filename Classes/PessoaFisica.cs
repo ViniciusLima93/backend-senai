@@ -15,45 +15,68 @@ using backend_vet.interfaces;
 
 namespace backend_vet.Classes
 {
-    public abstract class PessoaFisica : Client,IPessoaFisica
-
+     public class PessoaFisica : Client , IPessoaFisica
     {
-      public string? cpf {get;set;}
+        public string? cpf { get; set; }
+        
+        public DateTime dataNasc { get; set; }
 
-      public DateTime dataNasc {get;set;}
-
-        bool IPessoaFisica.ValidateDataNasc(DateTime dataNasc)
+        public override float CalcularImposto(float redimento)
         {
             throw new NotImplementedException();
         }
 
-        float IPessoaFisica.CalcularImposto(float rendimento)
+        public bool ValidarDataNasc(DateTime dataNasc)
         {
+            DateTime dataAtual = DateTime.Today;
 
-          if (rendimento <=1500)
-          { 
-            return 0;
-          }else if (rendimento >= 1500 && rendimento <=3500) 
-          {
-            float resultado;
-            resultado = ((float)(rendimento * 0.02));
-          }else if (rendimento >= 3500 && rendimento <=6000) 
-          {
-            float resultado;
-            resultado = ((float)(rendimento * 0.035));
-          }else {
-            float resultado;
-            resultado = ((float)(rendimento * 0.05));
-          }
+            double anos = (dataAtual - dataNasc).TotalDays / 365;
 
-
-          throw new NotImplementedException();
+            Console.WriteLine($"{anos}");
+            
+            if (anos >= 18)
+            {
+                return true;
+            }
+            
+            return false;        
         }
 
-        internal float CalcularImposto(float? rendimento)
+        
+        public bool ValidarDataNasc(string dataNasc){
+
+            DateTime dataConvertida;  
+
+            if (DateTime.TryParse(dataNasc, out dataConvertida))
+            {
+                DateTime dataAtual = DateTime.Today;
+
+                double anos = (dataAtual - dataConvertida).TotalDays / 365;
+                
+                Console.WriteLine($"{anos}");
+
+                if (anos >= 18 && anos < 120)
+                {
+                    return true;
+                }
+                
+                return false;
+            }
+
+            return false;          
+        }
+
+        bool IPessoaFisica.ValidarDataNasc(DateTime dataNasc)
         {
             throw new NotImplementedException();
         }
+
+        bool IPessoaFisica.ValidarDataNasc(string dataNasc)
+        {
+            throw new NotImplementedException();
+        }
+
+     
     }
 
 }

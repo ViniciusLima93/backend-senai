@@ -7,7 +7,9 @@ namespace backend_vet.interfaces
 {
     public interface IPessoaFisica
     {
-        bool ValidateDataNasc(DateTime dataNasc);
-        float CalcularImposto(float rendimento);
+         bool ValidarDataNasc(DateTime dataNasc);
+
+        bool ValidarDataNasc(string dataNasc);
+       
     }
 }

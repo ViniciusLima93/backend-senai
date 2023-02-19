@@ -10,11 +10,12 @@ novaPF.nome = "Vinicius";
 novaPF.cpf = "123456";
 novaPF.rendimento = 7000.5f;
 
+
 // Console.WriteLine(novaPF.nome);
 // Console.WriteLine(novaPF.cpf);
 
 
-float res = novaPF.CalcularImposto(novaPF.rendimento); 
+float res = novaPF.CalcularImposto((float)novaPF.rendimento); 
 Console.WriteLine(res);
 
 PessoaJuridica novaPJ = new PessoaJuridica();
