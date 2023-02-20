@@ -29,3 +29,9 @@ PessoaJuridica novaPJ = new PessoaJuridica();
 bool res = novaPJ.ValidarCnpj((string)"12.345.678/0001-90");
 Console.WriteLine($"is a {res} as validate CNPJ");
 
+//Calcular imposto 
+
+
+ float imposPagar = novaPJ.CalcularImposto(12000.5f);
+ Console.WriteLine(imposPagar);
+
