@@ -2,6 +2,7 @@
 // Console.WriteLine("Hello, World!");
 
 using backend_vet.Classes;
+using System.IO;
 
 // PessoaFisica novaPF = new PessoaFisica();
 
@@ -34,7 +35,8 @@ using backend_vet.Classes;
 
 //  float imposPagar = novaPJ.CalcularImposto(12000.5f);
 //  Console.WriteLine(imposPagar);
-
+string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+string filename = Path.Combine(path, "arquivo.txt");
 Console.Clear();
 Console.WriteLine(@$"
 =============================================
@@ -81,6 +83,15 @@ do
 
             //novaPf.endereco = novoEnd;
 
+          using (StreamWriter writer = new StreamWriter("arquivoPF.txt"))
+
+    {
+        writer.WriteLine(@$"Nome: {novaPf.nome}");
+        writer.WriteLine(@$"CPF: {novaPf.cpf}");
+        writer.WriteLine(@$"Endereço: {novoEnd.logradouro}, {novoEnd.numero}");
+    }
+             
+
             Console.Clear();
             Console.WriteLine(@$"
 Nome: {novaPf.nome}
@@ -115,6 +126,16 @@ Endereço: {novoEnd.logradouro}, {novoEnd.numero}
 
             //novaPj.endereco = endPj;
 
+        using (StreamWriter writer = new StreamWriter("arquivoPJ.txt"))
+
+    {
+        writer.WriteLine(@$"Nome: {novaPj.nome}");
+        writer.WriteLine(@$"Razão Social: {novaPj.razaoSocial}");
+        writer.WriteLine(@$"CNPJ: {novaPj.cnpj}");
+        writer.WriteLine(@$"CNPJ válido: {metodoPj.ValidarCnpj(novaPj.cnpj)}");
+
+    }        
+
             Console.Clear();
             Console.WriteLine(@$"
 Nome: {novaPj.nome}
@@ -142,6 +163,8 @@ CNPJ válido: {metodoPj.ValidarCnpj(novaPj.cnpj)}
             Thread.Sleep(3000);
             break;
     }
+
+
 } while (opcao != "0");
 
 

@@ -1,0 +1,3 @@
+Nome: Vinicius
+CPF: 1234567890
+Endereço: Ruas das Araras, 539

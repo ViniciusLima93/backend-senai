@@ -1,0 +1,4 @@
+Nome: Empresa de Tecnologia do Vinicius
+Razão Social: Razão social Pj
+CNPJ: 00.000.000/0001-00
+CNPJ válido: True
