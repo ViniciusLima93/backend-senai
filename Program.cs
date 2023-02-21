@@ -83,7 +83,7 @@ do
 
             //novaPf.endereco = novoEnd;
 
-          using (StreamWriter writer = new StreamWriter("arquivoPF.txt"))
+          using (StreamWriter writer = new StreamWriter("arquivoPF.csv"))
 
     {
         writer.WriteLine(@$"Nome: {novaPf.nome}");
@@ -126,7 +126,7 @@ Endereço: {novoEnd.logradouro}, {novoEnd.numero}
 
             //novaPj.endereco = endPj;
 
-        using (StreamWriter writer = new StreamWriter("arquivoPJ.txt"))
+        using (StreamWriter writer = new StreamWriter("arquivoPJ.csv"))
 
     {
         writer.WriteLine(@$"Nome: {novaPj.nome}");
