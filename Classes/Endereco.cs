@@ -14,5 +14,7 @@ namespace backend_vet.Classes
         public string ? complemento {get;set;}
 
         public bool endComercial {get;set;}
+
+
     }
 }
